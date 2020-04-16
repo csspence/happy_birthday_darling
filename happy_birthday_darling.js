@@ -14,6 +14,11 @@ Examples:
 39  -->  "39? That's just 21, in base 19!"'
 */
 
-function womensAge(n) {
-  // your code here
+const womensAge = (n) => {
+  let base = Math.floor(n / 2);
+  let age = 20;
+  if(n % 2 !== 0) {
+    age = 21;
+  }
+  return n + "? That's just " + age + ", in base " + base + "!";
 }
